@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/* reset CSS */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* 重置字體 */
+body {
+    font-family:
+        /*西文*/
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        /*中文*/
+        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+/* 重置標題 */
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+/* 重置列表 */
+ul,ol {
+    list-style: none;
+}
+
+/* 重置圖片 */
+img {
+    display: block;
+    width: 100%;
+}
+
+/* 重置連接 */
+a {
+    color: ColorValues;
+    text-decoration: none;
+}
+body {
+  padding: 0px 20px;
+  background: #fff;
+  color: #333;
+}
+/* 整體限制在 1440px 內，並水平置中 */
+.nav-container, .section-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px; /* 留點左右內距 */
+}
+
+/* 導覽容器是 flex，用來分兩塊區域 */
+.nav-container {
+  position:absolute;
+  left: 40vw;
+  display: flex;
+  justify-content: space-between; /* 中間區塊與右側區塊左右分開 */
+  align-items: center;
+}
+
+/* 中間導覽區塊 */
+.nav-center ul {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding-right: 50px;
+}
+/* 右邊導覽區塊 */
+.nav-right ul {
+  padding-top: 4px;
+  display: flex;
+  gap: 24px;
+  justify-content: flex-end;
+}
+.login{
+padding: 6px 14px;
+border-radius: 20px;
+}
+.bean-shape {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #6dd6a7; /* 可以換成你想要的綠色 */
+    color: white;
+    border-radius: 999px; /* 核心！讓它變成豆子形狀 */
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+  .search-section {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding:50px 25vw;
+  }
+  
+  .search-section h1 {
+    font-size: 2rem;
+    text-transform: lowercase;
+  }
+  
+  .search-section .tags span {
+    display: inline-block;
+    background: #6dd6a7;
+    color: white;
+    padding: 4px 10px;
+    margin: 5px 5px 0 0;
+    border-radius: 10px;
+    font-size: 0.85rem;
+  }
+  
+  .search-bar {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  .search-bar button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    background: #fff;
+  }
+  
+  .card-grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0px 25vw ;
+  }
+  
+  .card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .card .tag {
+    display: inline-block;
+    background: #6dd6a7;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+  }
+  
+  .card .image {
+    background: #ccc;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .load-more {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .load-more .plus {
+    font-size: 2rem;
+    color: #6dd6a7;
+  }
+  
