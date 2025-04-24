@@ -55,37 +55,47 @@ body {
 
 /* 導覽容器是 flex，用來分兩塊區域 */
 .nav-container {
-  position:absolute;
-  left: 40vw;
+  display: flex; /* 中間區塊與右側區塊左右分開 */
+  align-items: center;
+  justify-content: center;
+  padding-left:18vw;
+
+}
+.nav-center {
   display: flex;
-  justify-content: space-between; /* 中間區塊與右側區塊左右分開 */
+  justify-content: space-between; 
   align-items: center;
 }
-
 /* 中間導覽區塊 */
 .nav-center ul {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-right: 50px;
+  padding-right: 150px;
 }
 /* 右邊導覽區塊 */
 .nav-right ul {
   padding-top: 4px;
   display: flex;
   gap: 24px;
+  position: relative;
   justify-content: flex-end;
+  align-items: center;
 }
 .login{
-padding: 6px 14px;
-border-radius: 20px;
+padding: 0px 15px;
+border-radius: 999px;
+font-weight: bold;
+font-size: 16px;
+border: 1px solid black;
+background: #fff;
 }
 .bean-shape {
     display: inline-block;
-    padding: 8px 20px;
-    background-color: #6dd6a7; /* 可以換成你想要的綠色 */
+    padding: 15px 30px;
+    background-color: #6dd6a7; 
     color: white;
-    border-radius: 999px; /* 核心！讓它變成豆子形狀 */
+    border-radius: 999px;
     font-weight: bold;
     font-size: 16px;
     text-align: center;
@@ -113,6 +123,8 @@ border-radius: 20px;
   }
   
   .search-bar {
+    position:relative;
+    width: 20vw;
     display: flex;
     margin-top: 10px;
   }
@@ -125,6 +137,7 @@ border-radius: 20px;
   }
   
   .search-bar button {
+
     padding: 8px 12px;
     border: 1px solid #ccc;
     border-left: none;
@@ -133,7 +146,7 @@ border-radius: 20px;
   }
   
   .card-grid {
-
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -141,9 +154,10 @@ border-radius: 20px;
   }
   
   .card {
+    max-width:min-content;
     border: 1px solid #eee;
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px 2vw;
     text-align: left;
   }
   
@@ -158,7 +172,8 @@ border-radius: 20px;
   }
   
   .card .image {
-    background: #ccc;
+    position: relative;
+    justify-content: center;
     height: 200px;
     width: 200px;
     border-radius: 10px;
